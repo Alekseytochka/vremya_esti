@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Время Есть — Домашняя еда. Готова за 15 минут. Доставка по Смоленску</title>
+<meta name="description" content="Замороженные заготовки супов, горячих блюд и соусов. Готовите свежий обед или ужин за 15–30 минут. Бесплатная доставка по Смоленску от 2500 ₽.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root {
+  --cream: #F8F1E4;
+  --cream-deep: #F2E8D4;
+  --paper: #FFFFFF;
+  --terracotta: #C9512B;
+  --terracotta-dark: #A33E1F;
+  --terracotta-soft: #F5DDD0;
+  --moss: #4A6741;
+  --moss-dark: #354C2F;
+  --moss-soft: #E0E6D8;
+  --saffron: #E89B2B;
+  --saffron-soft: #FBE7C4;
+  --ink: #1F1207;
+  --ink-soft: #6B5444;
+  --ink-faint: #A0907A;
+  --line: #E6D7BE;
+  --shadow-sm: 0 1px 2px rgba(31,18,7,0.06);
+  --shadow-md: 0 8px 24px rgba(31,18,7,0.08);
+  --shadow-lg: 0 24px 48px -12px rgba(31,18,7,0.18);
+  --display: 'Fraunces', Georgia, serif;
+  --sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* TYPOGRAPHY */
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--terracotta);
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.1; color: var(--ink); letter-spacing: -0.02em; }
+h1 { font-size: clamp(48px, 7vw, 92px); font-variation-settings: 'opsz' 96, 'SOFT' 50; }
+h2 { font-size: clamp(36px, 4.5vw, 56px); font-variation-settings: 'opsz' 72, 'SOFT' 40; }
+h3 { font-size: 24px; font-weight: 500; font-variation-settings: 'opsz' 36; }
+.h-italic { font-style: italic; font-weight: 400; color: var(--terracotta); }
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--terracotta);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover { background: var(--terracotta-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+.btn-secondary:hover { background: var(--ink); color: var(--cream); }
+.btn-ghost {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.btn-ghost:hover { border-color: var(--ink); }
+.btn svg { width: 18px; height: 18px; }
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248, 241, 228, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+}
+.logo-text {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--terracotta); }
+.nav-actions { display: flex; gap: 12px; align-items: center; }
+.phone-link { font-size: 14px; font-weight: 600; color: var(--ink); }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .phone-link { display: none; }
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--terracotta-soft);
+  border-radius: 999px;
+  margin-bottom: 28px;
+}
+.hero-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--terracotta); }
+.hero-eyebrow span { font-size: 12px; font-weight: 600; color: var(--terracotta-dark); letter-spacing: 0.08em; text-transform: uppercase; }
+.hero h1 { margin-bottom: 28px; }
+.hero-sub {
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.trust-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-soft); }
+.trust-item strong { color: var(--ink); font-weight: 600; }
+.stars { display: inline-flex; color: var(--saffron); }
+.stars svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* HERO VISUAL */
+.hero-visual {
+  position: relative;
+  aspect-ratio: 1 / 1.05;
+}
+.bowl-card {
+  position: absolute;
+  background: var(--paper);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.6s cubic-bezier(0.2,0.8,0.2,1);
+}
+.bowl-card-1 {
+  top: 0; left: 0;
+  width: 58%;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+.bowl-card-2 {
+  top: 28%; right: 0;
+  width: 52%;
+  transform: rotate(4deg);
+  z-index: 3;
+}
+.bowl-card-3 {
+  bottom: 0; left: 18%;
+  width: 50%;
+  transform: rotate(-1deg);
+  z-index: 1;
+}
+.hero-visual:hover .bowl-card-1 { transform: rotate(-5deg) translateY(-4px); }
+.hero-visual:hover .bowl-card-2 { transform: rotate(6deg) translateY(-4px); }
+.hero-visual:hover .bowl-card-3 { transform: rotate(-2deg) translateY(-4px); }
+.bowl-card svg { width: 100%; height: auto; display: block; }
+.bowl-label {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: 14px; padding: 0 4px;
+}
+.bowl-label-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.bowl-label-price { font-size: 13px; font-weight: 700; color: var(--terracotta); }
+
+/* deco squiggle */
+.squiggle {
+  position: absolute;
+  z-index: 0;
+  color: var(--terracotta);
+  opacity: 0.4;
+}
+.squiggle-1 { top: 60px; right: -20px; width: 120px; }
+.squiggle-2 { bottom: 40px; left: -30px; width: 80px; }
+
+@media (max-width: 900px) {
+  .hero { padding: 48px 0 60px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero-visual { max-width: 480px; margin: 0 auto; }
+  .hero-trust { flex-wrap: wrap; gap: 14px 24px; }
+}
+
+/* STORY */
+.story {
+  padding: 100px 0;
+  background: var(--cream-deep);
+  position: relative;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 80px;
+  align-items: start;
+}
+.story-img {
+  aspect-ratio: 4/5;
+  background: var(--moss-soft);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.story-img-quote {
+  position: absolute;
+  bottom: 24px; left: 24px; right: 24px;
+  background: var(--paper);
+  padding: 20px 24px;
+  border-radius: 12px;
+  font-family: var(--display);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.story-img-quote::before {
+  content: '"';
+  position: absolute;
+  top: -8px; left: 16px;
+  font-size: 56px;
+  color: var(--terracotta);
+  line-height: 1;
+}
+.story h2 { margin: 16px 0 24px; }
+.story p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.story-signature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.signature-avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--saffron);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-weight: 600;
+  color: var(--ink);
+}
+.signature-text strong { display: block; font-weight: 600; font-size: 14px; }
+.signature-text span { font-size: 13px; color: var(--ink-soft); }
+
+@media (max-width: 900px) {
+  .story { padding: 64px 0; }
+  .story-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* HOW IT WORKS */
+.how {
+  padding: 120px 0;
+}
+.section-head {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 72px;
+}
+.section-head .eyebrow { margin-bottom: 16px; display: block; }
+.section-head h2 { margin-bottom: 18px; }
+.section-head p { font-size: 17px; color: var(--ink-soft); line-height: 1.6; }
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+}
+.step {
+  background: var(--paper);
+  border-radius: 24px;
+  padding: 40px 32px;
+  border: 1px solid var(--line);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.step:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.step-num {
+  font-family: var(--display);
+  font-size: 80px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1;
+  color: var(--terracotta-soft);
+  margin-bottom: 8px;
+}
+.step-icon {
+  width: 56px; height: 56px;
+  border-radius: 16px;
+  background: var(--terracotta-soft);
+  color: var(--terracotta-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.step-icon svg { width: 28px; height: 28px; }
+.step h3 { margin-bottom: 12px; font-size: 22px; }
+.step p { color: var(--ink-soft); font-size: 15px; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .how { padding: 64px 0; }
+  .how-steps { grid-template-columns: 1fr; }
+}
+
+/* CATEGORIES */
+.categories {
+  padding: 100px 0;
+  background: var(--ink);
+  color: var(--cream);
+}
+.categories h2 { color: var(--cream); }
+.categories .section-head p { color: rgba(248,241,228,0.7); }
+.categories .eyebrow { color: var(--saffron); }
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.cat-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(248,241,228,0.1);
+  border-radius: 20px;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.cat-card:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-4px);
+  border-color: var(--saffron);
+}
+.cat-illustration {
+  width: 100%;
+  aspect-ratio: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.cat-illustration svg { width: 80%; height: auto; }
+.cat-card h3 {
+  color: var(--cream);
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-variation-settings: 'opsz' 36;
+}
+.cat-card-meta { display: flex; justify-content: space-between; align-items: center; }
+.cat-count { font-size: 13px; color: rgba(248,241,228,0.6); }
+.cat-price { font-size: 14px; font-weight: 600; color: var(--saffron); }
+
+@media (max-width: 1000px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .categories { padding: 64px 0; }
+  .cat-grid { grid-template-columns: 1fr; }
+}
+
+/* DISHES */
+.dishes {
+  padding: 120px 0;
+}
+.dishes-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.dishes-head-text { max-width: 600px; }
+.dishes-head .eyebrow { display: block; margin-bottom: 12px; }
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.dish {
+  background: var(--paper);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 1px solid var(--line);
+}
+.dish:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.dish-img {
+  aspect-ratio: 1.1;
+  background: var(--cream-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dish-img svg { width: 75%; height: auto; }
+.dish-tag {
+  position: absolute;
+  top: 14px; left: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.dish-tag.hot { background: var(--terracotta); color: #fff; }
+.dish-tag.new { background: var(--moss); color: #fff; }
+.dish-fav {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  transition: all 0.2s;
+}
+.dish-fav:hover { color: var(--terracotta); }
+.dish-fav svg { width: 18px; height: 18px; }
+.dish-body { padding: 20px 22px 22px; }
+.dish-name {
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+.dish-desc { font-size: 13px; color: var(--ink-soft); margin-bottom: 16px; line-height: 1.45; }
+.dish-foot { display: flex; justify-content: space-between; align-items: center; }
+.dish-price { font-size: 20px; font-weight: 700; color: var(--ink); font-family: var(--display); }
+.dish-price span { font-size: 14px; font-weight: 500; color: var(--ink-soft); }
+.dish-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--terracotta-soft);
+  color: var(--terracotta-dark);
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.dish-add:hover { background: var(--terracotta); color: #fff; }
+.dish-add svg { width: 14px; height: 14px; }
+
+@media (max-width: 1000px) {
+  .dishes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .dishes { padding: 64px 0; }
+  .dishes-grid { grid-template-columns: 1fr; }
+}
+
+/* VALUES */
+.values {
+  padding: 100px 0;
+  background: var(--moss-soft);
+  position: relative;
+  overflow: hidden;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.values-head h2 { margin-bottom: 24px; }
+.values-head p { font-size: 17px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 32px; }
+.values-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+.value-item {
+  background: var(--paper);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.3s ease;
+}
+.value-item:hover { transform: translateY(-2px); }
+.value-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--moss);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.value-icon svg { width: 22px; height: 22px; }
+.value-item h4 {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-variation-settings: 'opsz' 36;
+}
+.value-item p { font-size: 14px; color: var(--ink-soft); line-height: 1.5; margin: 0; }
+
+@media (max-width: 900px) {
+  .values { padding: 64px 0; }
+  .values-grid { grid-template-columns: 1fr; gap: 40px; }
+  .values-list { grid-template-columns: 1fr; }
+}
+
+/* REVIEWS */
+.reviews { padding: 120px 0; }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+.review {
+  background: var(--paper);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  position: relative;
+}
+.review-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--saffron);
+  margin-bottom: 18px;
+}
+.review-stars svg { width: 18px; height: 18px; fill: currentColor; }
+.review-text {
+  font-family: var(--display);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: var(--ink);
+  font-variation-settings: 'opsz' 24;
+}
+.review-author { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+.review-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--terracotta-soft);
+  color: var(--terracotta-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+.review-avatar.moss { background: var(--moss-soft); color: var(--moss-dark); }
+.review-avatar.saffron { background: var(--saffron-soft); color: var(--saffron); }
+.review-name { font-weight: 600; font-size: 14px; }
+.review-meta { font-size: 12px; color: var(--ink-faint); }
+.review-source {
+  position: absolute;
+  top: 24px; right: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 900px) {
+  .reviews { padding: 64px 0; }
+  .reviews-grid { grid-template-columns: 1fr; }
+}
+
+/* DELIVERY */
+.delivery {
+  padding: 100px 0;
+  background: var(--cream-deep);
+}
+.delivery-card {
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 32px;
+  padding: 64px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.delivery-card h2 { color: var(--cream); margin-bottom: 20px; }
+.delivery-card h2 .h-italic { color: var(--saffron); }
+.delivery-card > div:first-child > p { color: rgba(248,241,228,0.75); font-size: 17px; line-height: 1.6; margin-bottom: 32px; }
+.delivery-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px; }
+.delivery-stat strong {
+  display: block;
+  font-family: var(--display);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--saffron);
+  margin-bottom: 4px;
+}
+.delivery-stat span { font-size: 13px; color: rgba(248,241,228,0.7); line-height: 1.4; }
+.delivery-map {
+  aspect-ratio: 1.1;
+  background: rgba(255,255,255,0.05);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(248,241,228,0.1);
+}
+.delivery-map svg { width: 100%; height: 100%; }
+
+@media (max-width: 900px) {
+  .delivery { padding: 64px 0; }
+  .delivery-card { grid-template-columns: 1fr; padding: 40px 28px; gap: 32px; }
+}
+
+/* FAQ */
+.faq { padding: 120px 0; }
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+.faq-list { display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.faq-item[open] { border-color: var(--terracotta); }
+.faq-item summary {
+  padding: 22px 28px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '';
+  width: 10px; height: 10px;
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.faq-item[open] summary::after { transform: rotate(-135deg); }
+.faq-item p {
+  padding: 0 28px 24px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .faq { padding: 64px 0; }
+  .faq-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* CTA */
+.cta {
+  padding: 100px 0 120px;
+  text-align: center;
+}
+.cta-card {
+  background: var(--terracotta);
+  color: var(--cream);
+  border-radius: 32px;
+  padding: 80px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.cta-card h2 {
+  color: var(--cream);
+  margin-bottom: 20px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-card .h-italic { color: var(--saffron-soft); }
+.cta-card p {
+  max-width: 580px;
+  margin: 0 auto 36px;
+  font-size: 18px;
+  color: rgba(248,241,228,0.85);
+  line-height: 1.55;
+}
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta .btn-primary { background: var(--cream); color: var(--ink); }
+.cta .btn-primary:hover { background: var(--paper); }
+.cta .btn-secondary { color: var(--cream); border-color: rgba(248,241,228,0.4); }
+.cta .btn-secondary:hover { background: rgba(248,241,228,0.1); border-color: var(--cream); color: var(--cream); }
+.cta-deco {
+  position: absolute;
+  font-family: var(--display);
+  font-style: italic;
+  color: rgba(248,241,228,0.08);
+  font-size: 240px;
+  font-weight: 500;
+  line-height: 1;
+  pointer-events: none;
+}
+.cta-deco-1 { top: -20px; left: -40px; }
+.cta-deco-2 { bottom: -100px; right: -40px; transform: rotate(-8deg); }
+
+@media (max-width: 700px) {
+  .cta-card { padding: 56px 28px; }
+  .cta-deco { display: none; }
+}
+
+/* FOOTER */
+footer {
+  background: var(--ink);
+  color: rgba(248,241,228,0.7);
+  padding: 72px 0 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 56px;
+}
+.footer h4 {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+.footer-about p { font-size: 14px; line-height: 1.6; max-width: 280px; margin-bottom: 24px; }
+.footer-socials { display: flex; gap: 10px; }
+.social-btn {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(248,241,228,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  transition: all 0.2s;
+}
+.social-btn:hover { background: var(--terracotta); border-color: var(--terracotta); }
+.social-btn svg { width: 18px; height: 18px; }
+.footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer ul a { font-size: 14px; transition: color 0.2s; }
+.footer ul a:hover { color: var(--saffron); }
+.footer-bottom {
+  border-top: 1px solid rgba(248,241,228,0.1);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+}
+.footer-bottom .logo-mark { width: 32px; height: 32px; font-size: 16px; }
+.footer-bottom .logo-text { color: var(--cream); font-size: 16px; }
+
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 500px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-eyebrow { animation: fadeUp 0.6s 0.05s both; }
+.hero h1 { animation: fadeUp 0.7s 0.15s both; }
+.hero-sub { animation: fadeUp 0.7s 0.25s both; }
+.hero-cta { animation: fadeUp 0.7s 0.35s both; }
+.hero-trust { animation: fadeUp 0.7s 0.45s both; }
+.bowl-card-1 { animation: fadeUp 0.8s 0.4s both; }
+.bowl-card-2 { animation: fadeUp 0.8s 0.55s both; }
+.bowl-card-3 { animation: fadeUp 0.8s 0.7s both; }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <div class="logo-mark">В</div>
+        <div class="logo-text">Время Есть</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#story">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#delivery">Доставка</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+79935627006" class="phone-link">+7 (993) 562-70-06</a>
+        <a href="https://t.me/time_to_eat_smol" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5L2.5 12.5l5.5 2 2 6 3-3.5 5 4 4-16.5z"/></svg>
+          Заказать в Telegram
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <div class="dot"></div>
+          <span>Готовая еда · Смоленск</span>
+        </div>
+        <h1>Домашняя&nbsp;еда. <span class="h-italic">Готова за 15&nbsp;минут.</span></h1>
+        <p class="hero-sub">Замороженные заготовки супов, горячих блюд и&nbsp;соусов от&nbsp;нашей кухни. Не&nbsp;разогреваете полуфабрикат — готовите свежий обед, как&nbsp;будто стояли у&nbsp;плиты сами.</p>
+        <div class="hero-cta">
+          <a href="https://t.me/time_to_eat_smol" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5L2.5 12.5l5.5 2 2 6 3-3.5 5 4 4-16.5z"/></svg>
+            Меню в Telegram
+          </a>
+          <a href="#menu" class="btn btn-secondary">
+            Смотреть категории
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+            </span>
+            <span><strong>5,0</strong> · 10 отзывов</span>
+          </div>
+          <div class="trust-item"><strong>684</strong> подписчика VK</div>
+          <div class="trust-item"><strong>Бесплатная</strong> доставка от 2&nbsp;500&nbsp;₽</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- decorative squiggle -->
+        <svg class="squiggle squiggle-1" viewBox="0 0 100 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 15 Q 20 0, 35 15 T 65 15 T 95 15"/></svg>
+
+        <div class="bowl-card bowl-card-1">
+          <svg viewBox="0 0 200 200">
+            <defs><clipPath id="bowl1"><circle cx="100" cy="115" r="78"/></clipPath></defs>
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#E89B2B"/>
+            <g clip-path="url(#bowl1)">
+              <circle cx="80" cy="100" r="4" fill="#4A6741" opacity="0.7"/>
+              <circle cx="120" cy="110" r="3" fill="#4A6741" opacity="0.6"/>
+              <circle cx="105" cy="130" r="3" fill="#4A6741" opacity="0.7"/>
+              <circle cx="85" cy="125" r="2.5" fill="#fff" opacity="0.5"/>
+              <path d="M70 100 Q 90 90, 110 105 T 140 110" fill="none" stroke="#C9512B" stroke-width="2" opacity="0.4"/>
+            </g>
+            <!-- steam -->
+            <path d="M85 45 Q 80 35, 88 25 Q 92 15, 88 5" fill="none" stroke="#A0907A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            <path d="M110 50 Q 105 40, 113 30 Q 117 20, 113 10" fill="none" stroke="#A0907A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+          <div class="bowl-label">
+            <span class="bowl-label-name">Крем-суп тыквенный</span>
+            <span class="bowl-label-price">290 ₽</span>
+          </div>
+        </div>
+
+        <div class="bowl-card bowl-card-2">
+          <svg viewBox="0 0 200 200">
+            <defs><clipPath id="bowl2"><circle cx="100" cy="115" r="78"/></clipPath></defs>
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#97B86D"/>
+            <g clip-path="url(#bowl2)">
+              <circle cx="78" cy="105" r="3" fill="#4A6741"/>
+              <circle cx="115" cy="100" r="3" fill="#4A6741"/>
+              <circle cx="100" cy="125" r="4" fill="#fff" opacity="0.7"/>
+              <circle cx="125" cy="125" r="2" fill="#fff" opacity="0.5"/>
+              <circle cx="85" cy="130" r="2" fill="#fff" opacity="0.5"/>
+              <path d="M70 110 Q 100 95, 130 115" fill="none" stroke="#4A6741" stroke-width="1.5" opacity="0.4"/>
+            </g>
+            <path d="M95 45 Q 90 35, 98 25 Q 102 15, 98 5" fill="none" stroke="#A0907A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+          <div class="bowl-label">
+            <span class="bowl-label-name">Крем-суп из брокколи</span>
+            <span class="bowl-label-price">290 ₽</span>
+          </div>
+        </div>
+
+        <div class="bowl-card bowl-card-3">
+          <svg viewBox="0 0 200 200">
+            <defs><clipPath id="bowl3"><circle cx="100" cy="115" r="78"/></clipPath></defs>
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#E8DAA8"/>
+            <g clip-path="url(#bowl3)">
+              <rect x="80" y="100" width="8" height="8" rx="1" fill="#B8895C"/>
+              <rect x="105" y="115" width="9" height="9" rx="1" fill="#B8895C"/>
+              <rect x="115" y="95" width="7" height="7" rx="1" fill="#B8895C"/>
+              <rect x="85" y="125" width="8" height="8" rx="1" fill="#B8895C"/>
+              <circle cx="98" cy="118" r="2" fill="#4A6741" opacity="0.6"/>
+              <circle cx="125" cy="110" r="2" fill="#4A6741" opacity="0.6"/>
+            </g>
+            <path d="M105 45 Q 100 35, 108 25" fill="none" stroke="#A0907A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+          <div class="bowl-label">
+            <span class="bowl-label-name">Крем-суп грибной</span>
+            <span class="bowl-label-price">290 ₽</span>
+          </div>
+        </div>
+
+        <svg class="squiggle squiggle-2" viewBox="0 0 100 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 15 Q 20 0, 35 15 T 65 15 T 95 15"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-img reveal">
+        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width:100%; height:100%;">
+          <rect width="400" height="500" fill="#E0E6D8"/>
+          <!-- wooden table top -->
+          <rect y="280" width="400" height="220" fill="#C9A878"/>
+          <rect y="280" width="400" height="4" fill="#A88860" opacity="0.5"/>
+          <!-- pot -->
+          <ellipse cx="200" cy="290" rx="120" ry="20" fill="#1F1207"/>
+          <rect x="80" y="170" width="240" height="125" rx="8" fill="#2A1810"/>
+          <ellipse cx="200" cy="170" rx="120" ry="22" fill="#C9512B"/>
+          <ellipse cx="200" cy="168" rx="110" ry="18" fill="#E89B2B"/>
+          <!-- pot handles -->
+          <rect x="55" y="200" width="30" height="14" rx="4" fill="#2A1810"/>
+          <rect x="315" y="200" width="30" height="14" rx="4" fill="#2A1810"/>
+          <!-- steam -->
+          <path d="M150 130 Q 140 110, 155 90 Q 165 70, 155 50" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+          <path d="M200 120 Q 190 100, 205 80 Q 215 60, 205 40" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+          <path d="M250 130 Q 240 110, 255 90 Q 265 70, 255 50" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+          <!-- herbs scattered -->
+          <ellipse cx="60" cy="330" rx="14" ry="6" fill="#4A6741" transform="rotate(-30 60 330)"/>
+          <ellipse cx="55" cy="328" rx="10" ry="4" fill="#638856" transform="rotate(-30 55 328)"/>
+          <ellipse cx="340" cy="350" rx="14" ry="6" fill="#4A6741" transform="rotate(20 340 350)"/>
+          <!-- garlic -->
+          <ellipse cx="320" cy="320" rx="12" ry="14" fill="#F5EBC9"/>
+          <ellipse cx="320" cy="318" rx="3" ry="5" fill="#E0D4A8"/>
+          <!-- tomato -->
+          <circle cx="80" cy="380" r="16" fill="#C9512B"/>
+          <ellipse cx="78" cy="370" rx="5" ry="3" fill="#4A6741"/>
+          <!-- chili -->
+          <path d="M310 400 Q 330 395, 345 410 Q 340 415, 320 410 Z" fill="#A33E1F"/>
+          <rect x="305" y="395" width="6" height="3" fill="#4A6741"/>
+        </svg>
+        <div class="story-img-quote">Запах кухни — это запах дома. Хотим, чтобы он&nbsp;возвращался даже в&nbsp;самые суетные дни.</div>
+      </div>
+
+      <div>
+        <span class="eyebrow">О нас</span>
+        <h2>Мы готовим, как&nbsp;<span class="h-italic">для&nbsp;своих</span>.</h2>
+        <p>«Время Есть» — это маленькая кухня в&nbsp;Смоленске, где мы&nbsp;ежедневно варим супы, рагу, соусы — и&nbsp;замораживаем их&nbsp;в&nbsp;момент готовности. Без консервантов, усилителей и&nbsp;«пакетных» решений.</p>
+        <p>Главная идея простая: вы&nbsp;не&nbsp;разогреваете полуфабрикат — вы&nbsp;готовите свежий обед или ужин за&nbsp;15–30&nbsp;минут. Тарелка получается такой, как&nbsp;будто&nbsp;вы&nbsp;только что стояли у&nbsp;плиты. И&nbsp;по&nbsp;вкусу, и&nbsp;по&nbsp;ощущению.</p>
+        <p>Мы&nbsp;начали в&nbsp;мае 2025&nbsp;года и&nbsp;за&nbsp;несколько месяцев собрали 684&nbsp;подписчика, 5,0&nbsp;звёзд и&nbsp;десятки клиентов, которые возвращаются за&nbsp;тем&nbsp;же супом снова. Потому что вкусно — это привычка.</p>
+        <div class="story-signature">
+          <div class="signature-avatar">М</div>
+          <div class="signature-text">
+            <strong>Команда «Время Есть»</strong>
+            <span>г. Смоленск, ул. Оршанская, 23</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Как это работает</span>
+      <h2>Три шага до&nbsp;<span class="h-italic">свежего ужина</span></h2>
+      <p>Без походов в&nbsp;магазин, без часов у&nbsp;плиты и&nbsp;без «опять заказать пиццу».</p>
+    </div>
+    <div class="how-steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>Выбираете блюдо</h3>
+        <p>Открываете каталог в&nbsp;Telegram или VK&nbsp;— супы, горячее, соусы, фуршетное меню. Описание, состав, КБЖУ — всё прозрачно.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Привозим бесплатно</h3>
+        <p>Доставка по&nbsp;Смоленску — бесплатно от&nbsp;2&nbsp;500&nbsp;₽. Привозим в&nbsp;удобный для&nbsp;вас день и&nbsp;время в&nbsp;термопакете.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 18v4M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+        </div>
+        <h3>15&nbsp;минут&nbsp;— и&nbsp;готово</h3>
+        <p>Кладёте заготовку в&nbsp;кастрюлю или сковороду, накрываете крышкой. Через 15–30&nbsp;минут на&nbsp;столе свежий обед.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Меню</span>
+      <h2>На&nbsp;каждый день и&nbsp;на&nbsp;<span class="h-italic">любой случай</span></h2>
+      <p>Категории, которые покрывают и&nbsp;обычный обед в&nbsp;офисе, и&nbsp;ужин для&nbsp;семьи, и&nbsp;стол для&nbsp;гостей.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card reveal">
+        <div class="cat-illustration">
+          <svg viewBox="0 0 120 120">
+            <ellipse cx="60" cy="80" rx="48" ry="10" fill="rgba(255,255,255,0.05)"/>
+            <ellipse cx="60" cy="72" rx="48" ry="42" fill="#fff"/>
+            <ellipse cx="60" cy="72" rx="40" ry="34" fill="#E89B2B"/>
+            <circle cx="50" cy="65" r="3" fill="#4A6741" opacity="0.7"/>
+            <circle cx="70" cy="68" r="2.5" fill="#4A6741" opacity="0.7"/>
+            <circle cx="60" cy="80" r="2" fill="#fff" opacity="0.5"/>
+            <path d="M55 30 Q 50 22, 57 14" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <path d="M68 28 Q 63 20, 70 12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Крем-супы</h3>
+        <div class="cat-card-meta">
+          <span class="cat-count">8 видов</span>
+          <span class="cat-price">от 290 ₽</span>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-illustration">
+          <svg viewBox="0 0 120 120">
+            <ellipse cx="60" cy="80" rx="48" ry="10" fill="rgba(255,255,255,0.05)"/>
+            <ellipse cx="60" cy="72" rx="48" ry="42" fill="#fff"/>
+            <ellipse cx="60" cy="72" rx="40" ry="34" fill="#C9512B"/>
+            <rect x="48" y="60" width="8" height="6" rx="1" fill="#fff" opacity="0.85"/>
+            <rect x="62" y="68" width="9" height="7" rx="1" fill="#fff" opacity="0.85"/>
+            <rect x="55" y="75" width="6" height="5" rx="1" fill="#fff" opacity="0.85"/>
+            <ellipse cx="72" cy="62" rx="4" ry="2.5" fill="#4A6741" opacity="0.8"/>
+            <path d="M55 30 Q 50 22, 57 14" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <path d="M68 28 Q 63 20, 70 12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Супы для&nbsp;семьи</h3>
+        <div class="cat-card-meta">
+          <span class="cat-count">12 видов</span>
+          <span class="cat-price">от 340 ₽</span>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-illustration">
+          <svg viewBox="0 0 120 120">
+            <rect x="20" y="70" width="80" height="3" fill="rgba(255,255,255,0.1)"/>
+            <!-- canapés -->
+            <rect x="22" y="50" width="20" height="20" rx="2" fill="#E8DAA8"/>
+            <ellipse cx="32" cy="50" rx="9" ry="3" fill="#C9512B"/>
+            <ellipse cx="32" cy="48" rx="7" ry="2" fill="#E89B2B"/>
+            <rect x="50" y="55" width="20" height="15" rx="2" fill="#E8DAA8"/>
+            <ellipse cx="60" cy="55" rx="9" ry="3" fill="#97B86D"/>
+            <rect x="78" y="48" width="20" height="22" rx="2" fill="#E8DAA8"/>
+            <ellipse cx="88" cy="48" rx="9" ry="3" fill="#C9512B"/>
+            <circle cx="88" cy="44" r="3" fill="#4A6741"/>
+            <!-- olive picks -->
+            <line x1="32" y1="42" x2="32" y2="52" stroke="#fff" stroke-width="1"/>
+            <circle cx="32" cy="40" r="2" fill="#4A6741"/>
+            <line x1="60" y1="48" x2="60" y2="57" stroke="#fff" stroke-width="1"/>
+            <circle cx="60" cy="46" r="2" fill="#A33E1F"/>
+          </svg>
+        </div>
+        <h3>Фуршетное меню</h3>
+        <div class="cat-card-meta">
+          <span class="cat-count">канапе, тарталетки</span>
+          <span class="cat-price">от 1 500 ₽</span>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-illustration">
+          <svg viewBox="0 0 120 120">
+            <ellipse cx="60" cy="80" rx="48" ry="10" fill="rgba(255,255,255,0.05)"/>
+            <ellipse cx="60" cy="72" rx="48" ry="42" fill="#fff"/>
+            <ellipse cx="60" cy="72" rx="40" ry="34" fill="#A8C8D4"/>
+            <!-- shrimp -->
+            <path d="M50 65 Q 55 60, 60 65 Q 65 70, 60 75 Q 55 78, 50 75 Z" fill="#E89B2B"/>
+            <path d="M48 65 Q 45 62, 47 60" fill="none" stroke="#C9512B" stroke-width="1.5"/>
+            <!-- second shrimp -->
+            <path d="M68 70 Q 73 65, 78 70 Q 83 75, 78 78 Q 73 80, 68 78 Z" fill="#E89B2B" opacity="0.85"/>
+            <!-- herbs -->
+            <ellipse cx="55" cy="80" rx="3" ry="1.5" fill="#4A6741" opacity="0.7"/>
+            <ellipse cx="72" cy="62" rx="3" ry="1.5" fill="#4A6741" opacity="0.7"/>
+            <path d="M55 30 Q 50 22, 57 14" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>С морепродуктами</h3>
+        <div class="cat-card-meta">
+          <span class="cat-count">6 видов</span>
+          <span class="cat-price">от 350 ₽</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISHES -->
+<section class="dishes">
+  <div class="container">
+    <div class="dishes-head reveal">
+      <div class="dishes-head-text">
+        <span class="eyebrow">Хиты меню</span>
+        <h2 style="margin-top:10px;">Что заказывают <span class="h-italic">чаще всего</span></h2>
+      </div>
+      <a href="https://t.me/time_to_eat_smol" class="btn btn-ghost">
+        Всё меню в Telegram
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="dishes-grid">
+      <article class="dish reveal">
+        <div class="dish-img">
+          <span class="dish-tag hot">Хит</span>
+          <button class="dish-fav" aria-label="В избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></button>
+          <svg viewBox="0 0 200 200">
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#D8C8A0"/>
+            <rect x="85" y="100" width="9" height="9" rx="1" fill="#B8895C"/>
+            <rect x="110" y="115" width="10" height="10" rx="1" fill="#B8895C"/>
+            <rect x="100" y="130" width="8" height="8" rx="1" fill="#B8895C"/>
+            <rect x="80" y="125" width="7" height="7" rx="1" fill="#A87850"/>
+            <circle cx="125" cy="105" r="2.5" fill="#4A6741" opacity="0.7"/>
+            <circle cx="95" cy="125" r="2" fill="#4A6741" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Крем-суп из&nbsp;шампиньонов</h3>
+          <p class="dish-desc">С трюфельным маслом и&nbsp;гренками. Бархатная текстура.</p>
+          <div class="dish-foot">
+            <span class="dish-price">290 <span>₽ / 350 г</span></span>
+            <a href="https://t.me/time_to_eat_smol" class="dish-add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>В корзину</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-img">
+          <button class="dish-fav" aria-label="В избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></button>
+          <svg viewBox="0 0 200 200">
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#97B86D"/>
+            <circle cx="85" cy="100" r="3.5" fill="#4A6741"/>
+            <circle cx="115" cy="105" r="3" fill="#4A6741"/>
+            <circle cx="100" cy="125" r="2.5" fill="#4A6741"/>
+            <circle cx="95" cy="130" r="3" fill="#fff" opacity="0.7"/>
+            <circle cx="120" cy="125" r="2" fill="#fff" opacity="0.6"/>
+            <path d="M75 110 Q 100 95, 125 115" fill="none" stroke="#4A6741" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Крем-суп из&nbsp;брокколи</h3>
+          <p class="dish-desc">С пармезаном и&nbsp;поджаренными семечками тыквы.</p>
+          <div class="dish-foot">
+            <span class="dish-price">290 <span>₽ / 350 г</span></span>
+            <a href="https://t.me/time_to_eat_smol" class="dish-add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>В корзину</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-img">
+          <span class="dish-tag new">Новинка</span>
+          <button class="dish-fav" aria-label="В избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></button>
+          <svg viewBox="0 0 200 200">
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#E89B2B"/>
+            <ellipse cx="80" cy="105" rx="5" ry="3.5" fill="#fff" opacity="0.85"/>
+            <ellipse cx="115" cy="110" rx="6" ry="4" fill="#fff" opacity="0.85"/>
+            <ellipse cx="95" cy="130" rx="5" ry="3" fill="#fff" opacity="0.85"/>
+            <circle cx="125" cy="125" r="2" fill="#4A6741" opacity="0.7"/>
+            <circle cx="78" cy="125" r="2" fill="#4A6741" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Крем-суп с&nbsp;индейкой</h3>
+          <p class="dish-desc">Сливочный, плотный. С&nbsp;ребёнком тоже зайдёт.</p>
+          <div class="dish-foot">
+            <span class="dish-price">310 <span>₽ / 350 г</span></span>
+            <a href="https://t.me/time_to_eat_smol" class="dish-add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>В корзину</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-img">
+          <button class="dish-fav" aria-label="В избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></button>
+          <svg viewBox="0 0 200 200">
+            <ellipse cx="100" cy="115" rx="80" ry="78" fill="#fff" stroke="#E6D7BE" stroke-width="2"/>
+            <ellipse cx="100" cy="115" rx="65" ry="63" fill="#E0B870"/>
+            <path d="M80 100 Q 85 95, 92 100 Q 90 108, 82 108 Z" fill="#E89B2B"/>
+            <path d="M105 115 Q 112 110, 120 115 Q 118 123, 108 123 Z" fill="#E89B2B"/>
+            <path d="M75 75 Q 80 73, 85 75" fill="none" stroke="#C9512B" stroke-width="1.5"/>
+            <ellipse cx="90" cy="130" rx="4" ry="2" fill="#4A6741"/>
+            <ellipse cx="115" cy="100" rx="3" ry="2" fill="#A33E1F"/>
+          </svg>
+        </div>
+        <div class="dish-body">
+          <h3 class="dish-name">Суп Том Кха</h3>
+          <p class="dish-desc">Кокос, лемонграсс, креветки. Любимец фанатов азиатчины.</p>
+          <div class="dish-foot">
+            <span class="dish-price">560 <span>₽ / 400 г</span></span>
+            <a href="https://t.me/time_to_eat_smol" class="dish-add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>В корзину</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="container">
+    <div class="values-grid">
+      <div class="values-head reveal">
+        <span class="eyebrow">Почему мы</span>
+        <h2>Не&nbsp;«полуфабрикат». А&nbsp;<span class="h-italic">домашняя заготовка</span>.</h2>
+        <p>Разница принципиальная. Полуфабрикат — это сделано на&nbsp;заводе из&nbsp;неизвестного. Заготовка — это то, что&nbsp;вы&nbsp;могли&nbsp;бы заморозить сами, если&nbsp;бы у&nbsp;вас было полдня свободного времени.</p>
+        <a href="#menu" class="btn btn-primary">
+          Открыть меню
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="values-list">
+        <div class="value-item reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+          </div>
+          <h4>Только свежее</h4>
+          <p>Овощи и&nbsp;мясо берём у&nbsp;местных фермеров. Без консервантов и&nbsp;усилителей.</p>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2v20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+          </div>
+          <h4>Шоковая заморозка</h4>
+          <p>Сохраняет вкус и&nbsp;текстуру, как&nbsp;будто блюдо только что с&nbsp;плиты.</p>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></svg>
+          </div>
+          <h4>Своя кухня</h4>
+          <p>Готовим в&nbsp;Смоленске на&nbsp;Оршанской,&nbsp;23. Можно приехать и&nbsp;посмотреть.</p>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h4>15–30 минут</h4>
+          <p>Положили в&nbsp;кастрюлю — пошли заниматься своими делами. Свежий обед готов.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Отзывы</span>
+      <h2>5,0 на&nbsp;<span class="h-italic">ВКонтакте</span>. Каждый клиент — рекомендация.</h2>
+      <p>Реальные отзывы из&nbsp;нашего сообщества VK. Без отбора и&nbsp;ретуши.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review reveal">
+        <span class="review-source">VK</span>
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+        </div>
+        <p class="review-text">«Заказывала крем-суп из&nbsp;шампиньонов на&nbsp;ужин. Достала из&nbsp;морозилки, через 20&nbsp;минут&nbsp;— на&nbsp;столе. Реально вкусно, муж даже не&nbsp;понял, что не&nbsp;я&nbsp;готовила».</p>
+        <div class="review-author">
+          <div class="review-avatar">АК</div>
+          <div>
+            <div class="review-name">Анна К.</div>
+            <div class="review-meta">Постоянный клиент · 3&nbsp;месяца</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <span class="review-source">VK</span>
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+        </div>
+        <p class="review-text">«Брали Том Кха — это что-то с&nbsp;чем-то. На&nbsp;уровне ресторана, при&nbsp;этом дома. Команда отвечает быстро, привезли в&nbsp;то&nbsp;время, что обещали».</p>
+        <div class="review-author">
+          <div class="review-avatar moss">СВ</div>
+          <div>
+            <div class="review-name">Светлана В.</div>
+            <div class="review-meta">Заказывает регулярно</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <span class="review-source">VK</span>
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7h7.1l-5.7 4.3 2.2 7-6.5-4.7-6.5 4.7 2.2-7L2 9h7.1z"/></svg>
+        </div>
+        <p class="review-text">«Заказали фуршетное меню на&nbsp;ДР тёщи&nbsp;— все спрашивали где&nbsp;брали. Сэкономили день готовки, тёща довольна. Высший пилотаж».</p>
+        <div class="review-author">
+          <div class="review-avatar saffron">МР</div>
+          <div>
+            <div class="review-name">Михаил Р.</div>
+            <div class="review-meta">Заказ на&nbsp;15 человек</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="delivery" id="delivery">
+  <div class="container">
+    <div class="delivery-card reveal">
+      <div>
+        <span class="eyebrow" style="color: var(--saffron);">Доставка</span>
+        <h2 style="margin-top:14px;">По&nbsp;всему Смоленску. <span class="h-italic">Бесплатно</span> от&nbsp;2&nbsp;500&nbsp;₽.</h2>
+        <p>Привозим в&nbsp;термопакете в&nbsp;удобное для&nbsp;вас время. Самовывоз — с&nbsp;улицы Оршанской,&nbsp;23. Оплата при&nbsp;получении или&nbsp;онлайн.</p>
+        <div class="delivery-stats">
+          <div class="delivery-stat">
+            <strong>0 ₽</strong>
+            <span>Доставка от&nbsp;2&nbsp;500&nbsp;₽</span>
+          </div>
+          <div class="delivery-stat">
+            <strong>30&nbsp;дн.</strong>
+            <span>Срок хранения в&nbsp;морозилке</span>
+          </div>
+          <div class="delivery-stat">
+            <strong>15&nbsp;мин.</strong>
+            <span>Среднее время ответа в&nbsp;чате</span>
+          </div>
+          <div class="delivery-stat">
+            <strong>−15°C</strong>
+            <span>Шоковая заморозка</span>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-map">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <!-- abstract map -->
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(248,241,228,0.06)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="400" fill="url(#grid)"/>
+          <!-- delivery zone (smolensk shape, abstract) -->
+          <path d="M 100 150 Q 140 120, 200 130 Q 280 140, 300 200 Q 320 270, 260 300 Q 200 320, 140 290 Q 90 250, 100 150 Z" fill="rgba(232,155,43,0.08)" stroke="#E89B2B" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <!-- pin -->
+          <circle cx="200" cy="210" r="32" fill="#C9512B" opacity="0.2"/>
+          <circle cx="200" cy="210" r="18" fill="#C9512B" opacity="0.4"/>
+          <circle cx="200" cy="210" r="8" fill="#C9512B"/>
+          <!-- label -->
+          <rect x="135" y="240" width="130" height="34" rx="6" fill="#F8F1E4"/>
+          <text x="200" y="262" font-family="Manrope,sans-serif" font-size="12" font-weight="600" fill="#1F1207" text-anchor="middle">Оршанская, 23</text>
+          <!-- delivery dots -->
+          <circle cx="150" cy="180" r="4" fill="#E89B2B"/>
+          <circle cx="260" cy="180" r="4" fill="#E89B2B"/>
+          <circle cx="160" cy="270" r="4" fill="#E89B2B"/>
+          <circle cx="250" cy="260" r="4" fill="#E89B2B"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 style="margin-top:14px;">Частые <span class="h-italic">вопросы</span></h2>
+        <p style="margin-top:16px; color: var(--ink-soft);">Не&nbsp;нашли ответ? Напишите в&nbsp;Telegram&nbsp;— отвечаем в&nbsp;среднем за&nbsp;15&nbsp;минут.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Как долго хранятся блюда?</summary>
+          <p>В&nbsp;морозильной камере при&nbsp;−18°C&nbsp;— до&nbsp;30&nbsp;дней с&nbsp;момента производства. После разморозки рекомендуем съесть в&nbsp;течение суток.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Как готовить?</summary>
+          <p>Достаньте заготовку из&nbsp;упаковки, положите в&nbsp;кастрюлю или сковороду, накройте крышкой и&nbsp;поставьте на&nbsp;средний огонь. Через 15–30&nbsp;минут блюдо готово. Размораживать заранее не&nbsp;нужно.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Что внутри? Есть ли консерванты?</summary>
+          <p>Только натуральные ингредиенты&nbsp;— овощи, мясо, рыба, специи, растительные масла. Консервантов, усилителей вкуса, искусственных красителей нет. Полный состав каждого блюда указан в&nbsp;карточке товара.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Можно ли забрать самовывозом?</summary>
+          <p>Да, самовывоз бесплатный. Адрес: г.&nbsp;Смоленск, ул.&nbsp;Оршанская,&nbsp;23. Сообщите в&nbsp;Telegram удобное время&nbsp;— подготовим заказ.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Доставка в&nbsp;другие города?</summary>
+          <p>Сейчас работаем только по&nbsp;Смоленску. Если&nbsp;вы&nbsp;из&nbsp;соседнего города или&nbsp;области — напишите в&nbsp;Telegram, обсудим индивидуально.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Как оплатить?</summary>
+          <p>Наличными или картой при&nbsp;получении, переводом по&nbsp;СБП. Безналичная оплата онлайн&nbsp;— по&nbsp;запросу.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-card reveal">
+      <div class="cta-deco cta-deco-1">«</div>
+      <div class="cta-deco cta-deco-2">»</div>
+      <span class="eyebrow" style="color: var(--saffron-soft);">Готовы попробовать?</span>
+      <h2 style="margin-top:18px;">Откройте меню и&nbsp;закажите <span class="h-italic">свежий ужин</span>&nbsp;на&nbsp;сегодня.</h2>
+      <p>Свободного времени станет на&nbsp;час больше, а&nbsp;дома будет пахнуть домом.</p>
+      <div class="cta-buttons">
+        <a href="https://t.me/time_to_eat_smol" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5L2.5 12.5l5.5 2 2 6 3-3.5 5 4 4-16.5z"/></svg>
+          Меню в Telegram
+        </a>
+        <a href="#" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.93 2 2 3.93 2 8.93v6.14C2 20.07 3.93 22 8.93 22h6.14c5 0 6.93-1.93 6.93-6.93V8.93C22 3.93 20.07 2 15.07 2zm3.5 14.27h-1.45c-.55 0-.71-.44-1.7-1.42-.86-.83-1.23-.94-1.44-.94-.3 0-.38.08-.38.5v1.31c0 .36-.11.57-1.06.57-1.57 0-3.31-.95-4.54-2.72C5.51 12.2 5 9.95 5 9.48c0-.22.08-.42.5-.42h1.45c.37 0 .51.17.66.57.71 2.06 1.91 3.86 2.4 3.86.18 0 .27-.08.27-.55v-2.15c-.06-.99-.59-1.07-.59-1.42 0-.17.14-.34.36-.34h2.28c.31 0 .42.17.42.54v2.9c0 .31.14.42.22.42.18 0 .33-.11.66-.44 1.04-1.16 1.78-2.95 1.78-2.95.1-.21.27-.4.64-.4h1.45c.44 0 .54.22.44.54-.18.83-1.97 3.36-1.97 3.36-.15.25-.21.36 0 .64.15.21.66.65 1 1.04.62.7 1.1 1.29 1.23 1.7.13.39-.08.6-.45.6z"/></svg>
+          Каталог VK
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4 style="margin-bottom:14px;">Время Есть</h4>
+        <p>Замороженные домашние заготовки супов, горячих блюд и&nbsp;соусов. Своя кухня в&nbsp;Смоленске.</p>
+        <div class="footer-socials">
+          <a href="https://t.me/time_to_eat_smol" class="social-btn" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5L2.5 12.5l5.5 2 2 6 3-3.5 5 4 4-16.5z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="VK"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.93 2 2 3.93 2 8.93v6.14C2 20.07 3.93 22 8.93 22h6.14c5 0 6.93-1.93 6.93-6.93V8.93C22 3.93 20.07 2 15.07 2zm3.5 14.27h-1.45c-.55 0-.71-.44-1.7-1.42-.86-.83-1.23-.94-1.44-.94-.3 0-.38.08-.38.5v1.31c0 .36-.11.57-1.06.57-1.57 0-3.31-.95-4.54-2.72C5.51 12.2 5 9.95 5 9.48c0-.22.08-.42.5-.42h1.45c.37 0 .51.17.66.57.71 2.06 1.91 3.86 2.4 3.86.18 0 .27-.08.27-.55v-2.15c-.06-.99-.59-1.07-.59-1.42 0-.17.14-.34.36-.34h2.28c.31 0 .42.17.42.54v2.9c0 .31.14.42.22.42.18 0 .33-.11.66-.44 1.04-1.16 1.78-2.95 1.78-2.95.1-.21.27-.4.64-.4h1.45c.44 0 .54.22.44.54-.18.83-1.97 3.36-1.97 3.36-.15.25-.21.36 0 .64.15.21.66.65 1 1.04.62.7 1.1 1.29 1.23 1.7.13.39-.08.6-.45.6z"/></svg></a>
+          <a href="tel:+79935627006" class="social-btn" aria-label="Телефон"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Меню</h4>
+        <ul>
+          <li><a href="#">Крем-супы</a></li>
+          <li><a href="#">Супы для семьи</a></li>
+          <li><a href="#">Фуршетное меню</a></li>
+          <li><a href="#">С морепродуктами</a></li>
+          <li><a href="#">Горячие блюда</a></li>
+          <li><a href="#">Соусы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Магазин</h4>
+        <ul>
+          <li><a href="#story">О нас</a></li>
+          <li><a href="#delivery">Доставка и оплата</a></li>
+          <li><a href="#faq">Частые вопросы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#">Корпоративным клиентам</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li>г. Смоленск</li>
+          <li>ул. Оршанская, 23</li>
+          <li><a href="tel:+79935627006">+7 (993) 562-70-06</a></li>
+          <li><a href="https://t.me/time_to_eat_smol">@time_to_eat_smol</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <div class="logo-mark">В</div>
+        <span class="logo-text">Время Есть</span>
+        <span style="color: rgba(248,241,228,0.4); margin-left: 16px;">© 2025</span>
+      </div>
+      <div>
+        <a href="#" style="color: rgba(248,241,228,0.6);">Политика конфиденциальности</a>
+        <span style="margin: 0 12px; opacity: 0.3;">·</span>
+        <a href="#" style="color: rgba(248,241,228,0.6);">Публичная оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// scroll reveal
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
